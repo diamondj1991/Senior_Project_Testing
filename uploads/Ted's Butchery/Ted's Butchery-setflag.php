@@ -1,0 +1,1 @@
+<?php require_once '../../db_connect.php';$conn = new DatabaseConnect('localhost','root', 'root', 'senior_project');$oid = $_GET['order_id'];$pid = $_GET['product_id'];$conn->query("UPDATE `Ted's Butchery_clientcustomerorderline` SET filled = 1 WHERE order_id = '$oid' AND product_id = '$pid'");?> 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/platform_index.js"></script>
+</head>
+<body>
+<h2>Tell us a little about your business:</h2>
+<form name="business_info_form" id="business_info_form" method="post"  enctype="multipart/form-data"action="main.php">
+    <label for="company_name">Company Name: </label>
+    <input type="text" id="company_name" name="company_name"><br>
+    <label for="company_phone">Company Phone: </label>
+    <input type="text" id="company_phone" name="company_phone"><br>
+    <label for="company_email">Company Email: </label>
+    <input type="email" id="company_email" name="company_email"><br>
+    <label for="company_email">Company Logo: </label>
+    <input type="file" id="company_logo" name="company_logo"><br>
+    <input type="button" id="next" name="next" value="Next" disabled="disabled"><hr>
+    <div id="product_info">
+        <button id="add_field_button">Add More Products</button><br><br>
+        Product Id: <input type="text" id="product_id" name="product_id[]"><br>
+        Product Name: <input type="text" id="product_name" name="product_name[]"><br>
+        Product Price: <input type="text" id="product_price" name="product_price[]"><br>
+        Product Type: <input type="text" id="product_type" name="product_type[]"><br>
+        Product Description: <input type="text" id="product_description" name="product_description[]"><br>
+        Product Brand: <input type="text" id="product_brand" name="product_brand[]"><br>
+    </div>
+    
+    <input type="submit" id="submit_business_info" style="display: none;">
+</form>
+</body>
+</html>
